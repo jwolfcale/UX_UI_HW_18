@@ -145,6 +145,7 @@ img {
   margin: 10px;
   text-align: center;
   padding: 10px;
+  display: flex;
 }
 
 .workGrid {
@@ -152,6 +153,10 @@ img {
   grid-template-columns: auto auto;
   text-align: center;
   justify-items: center;
+}
+
+.heroContent {
+  display: 
 }
 
 @media only screen and (max-width: 600){
