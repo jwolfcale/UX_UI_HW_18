@@ -26,6 +26,7 @@ body {
   background-color: #f5f5f5;
   position: fixed;
   justify-content: center;
+  z-index: 1;
 }
 
 .ul {
@@ -40,18 +41,41 @@ body {
   margin-right: 2%;
 }
 
+.heroSection {
+  padding-top: 63px;
+  padding-bottom: 60px;
+}
+
 .heroContainer {
-  display: grid;
-  padding: 10px;
-  background-color: rgba(0,0,0,.5);
+  display: flex;
   color: #f5f5f5;
-  width: 40%;
-  margin-left: 8%;
+  width: 96%;
+  background-image: url("../images/Hero Image.jpg");
+  background-size: cover;
+  height: fit-content;
+  padding: 2%;
 }
 
 .heroContent {
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-top: 3%;
+  margin-left: 6%;
+  padding-top: 8px;
+  padding-bottom: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(0,0,0,.5);
+  width: 25%;
+  height: fit-content;
+  margin-bottom: 5%;
+}
+
+.ctaButton {
+  background-color: #f5f5f5;
+  color: #404040;
+  margin-left: 37%;
+  margin-top: 8%;
+  height: 50px;
+  width: 220px;
 }
 
 footer {
@@ -76,6 +100,8 @@ li {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 h1 {
@@ -97,39 +123,30 @@ h3 {
 
 h4 {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 button {
   font-family: Arial, Helvetica, sans-serif;
   border: none;
+  letter-spacing: 2px;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 25px;
   height: 45px;
   background-color: rgb(0, 140, 255);
-  color: #f5f5f5;
+  color: #f5f5f5
 }
 
-.buttonalt {
-  align-content: center;
+button:hover {
+  background-color: #41DCC9;
+  color: #404040
 }
 
-.heroImg {
-  width: 100%;
-  background-image: url("../images/Hero Image.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  padding-top: 157px;
-}
-
-img {
-  width: 100%;
-}
-
-.workCardImage {
-  width: 50%;
+.sectionButton {
+  justify-items: center;
+  background-color: aqua;
 }
 
 .flexContainer {
@@ -139,24 +156,73 @@ img {
 }
 
 .containerCard {
-  width: 90%;
+  width: 97%;
   background-color: #404040;
   color: #f5f5f5;
-  margin: 10px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
   text-align: center;
-  padding: 10px;
   display: flex;
+  max-height: 290px;
+  transition: transform .2s;
+}
+
+.containerCard:hover {
+  transform: scale(1.015);
 }
 
 .workGrid {
   display: grid;
   grid-template-columns: auto auto;
-  text-align: center;
   justify-items: center;
 }
 
-.heroContent {
-  display: 
+.myWork {
+  padding-bottom: 60px;
+}
+
+.myWorkImage {
+  width: 290px;
+}
+
+.cardText {
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.skillsFlexContainer {
+  display: flex;
+}
+
+.skillsContainerCard {
+  width: 100%;
+  margin-left: .75%;
+  margin-right: .75%;
+  background-color: #404040;
+  display: inline;
+}
+
+.skillsImg {
+  width: 100%;
+}
+
+.cardText {
+  background-color: #404040;
+  color: #f5f5f5;
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+}
+
+.cardTextSkills {
+  background-color: #404040;
+  color: #f5f5f5;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 6%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600){

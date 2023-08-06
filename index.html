@@ -5,7 +5,10 @@
     <title>Portfolio Site</title>
   </head>
   
+  <!-- Nav Section -->
+  
   <body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <header class="nav">
       <div class="logo"></div>
       <div class="navLinks">
@@ -19,82 +22,122 @@
       </div>  
     </header>
     
-    <section class="heroImg">
-        <div= class="heroContainer">
+    <!-- Hero Image Section -->
+
+    <section class="heroSection">
+        <div class="heroContainer">
           <div class="heroContent">
-              <h2>Hello, I'm James</h2>
-              <p>I’m a digital product designer based in Atlanta, GA, specializing in UI and UX design, and I’m here to turn your ideas into beautiful, intuitive finished products.</p>
-            </div>
-        </div>
-        <div>
-          <button>Download Resume</button>
+            <h2>Hello, I'm James</h2>
+            <p>I’m a digital product designer based in Atlanta, GA, specializing in UI and UX design, and I’m here to turn your ideas into beautiful, intuitive finished products.</p>
+          </div>
+          <button class="ctaButton">DOWNLOAD RESUME</button>
         </div>
     </section>
+    
+    <!-- My Work Section -->
     
     <section class="myWork">
       <h1>My Work</h1>
       <div class ="workGrid">
+        
+        <!-- Card 1 -->
+        
         <div class="containerCard">
           <div>
-            <img src="images/EK Export.jpg"></img>
+            <img class="myWorkImage" src="images/EK Export.jpg"></img>
           </div>
           <div class="cardText">
             <h4>EventKey</h4>
             <p>The event finder app where events you’ll love find you.</p>
-            <button>See More</button>
           </div>
         </div>
+        
+        <!-- Card 2 -->
+        
         <div class="containerCard">
           <div>
-            <img src="images/NASA Export.jpg"></img>
+            <img class="myWorkImage" src="images/NASA Export.jpg"></img>
           </div>
-          <h4>NASA Site Redesign</h4>
-          <p>Redesigning and rethinking NASA’s surprisingly obsolete and confusing website.</p>
-          <button>See More</button>
+          <div class="cardText">
+            <h4>NASA Site Redesign</h4>
+            <p>Redesigning and rethinking NASA’s surprisingly obsolete and confusing website.</p>
+          </div>
         </div>
+        
+        <!-- Card 3 -->
+        
         <div class="containerCard">
           <div>
-            <img src="images/Portfolio Tile.jpg"></img>
+            <img class="myWorkImage" src="images/Portfolio Tile.jpg"></img>
           </div>
-          <h4>Auto UI</h4>
-          <p>Frustrations with current in-car infotainment systems lead to a full-scale reexamination of how we interact with our cars now and in the future.</p>
-          <button>See More</button>
+          <div class="cardText">
+            <h4>Auto UI</h4>
+            <p>Frustrations with current in-car infotainment systems lead to a full-scale reexamination of how we interact with our cars now and in the future.</p>
+          </div>
         </div>
+        
+        <!-- Card 4 -->
+        
         <div class="containerCard">
           <div>
-            <img src="images/Portfolio Tile-1.jpg"></img>
+            <img class="myWorkImage" src="images/Portfolio Tile-1.jpg"></img>
           </div>
-          <h4>The MARTA Project</h4>
-          <p>Rethinking a public transit mobile app for a city with unique transportation challenges.</p>
-          <button>See More</button>
+          <div class="cardText">
+            <h4>The MARTA Project</h4>
+            <p>Rethinking a public transit mobile app for a city with unique transportation challenges.</p>
+          </div>
         </div>
+
+        <!-- Cards End -->
+      
       </div>
-      <div class="buttonAlt">
-        <button>View All Projects</button>
-      </div>
+      <h1>
+        <button>VIEW ALL PROJECTS</button>
+      </h2>
+    </section>
     
-    <!--  My UX Skills section coded using CSS flex -->
+    <!-- My Skills Section -->
 
     <section class="mySkills">
-      <h1>My UX Skills</h1>
-      <div class=flexContainer>
-        <div class="containerCard">
-          <img src="images/user_research.jpg"></img>
-          <h3>User Research</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+      <h1>Skills</h1>
+      <div class="skillsFlexContainer">
+        
+        <!-- Card 1 -->
+        
+        <div class="skillsContainerCard">
+          <img class="skillsImg" src="images/user_research.jpg"></img>
+          <div class="cardTextSkills">  
+            <h4>User Research</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+          </div>
         </div>
-        <div class="containerCard">
-          <img src="images/ui_design.jpg"></img>
-          <h3>User Interface Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+
+        <!-- Card 2 -->
+
+        <div class="skillsContainerCard">
+          <img class="skillsImg" src="images/ui_design.jpg"></img>
+          <div class="cardTextSkills">
+            <h4>User Interface Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+          </div>
         </div>
-        <div class="containerCard">
-          <img src="images/web_dev.jpg"></img>
-          <h3>Web Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+
+        <!-- Card 3 -->
+
+        <div class="skillsContainerCard">
+          <img class="skillsImg" src="images/web_dev.jpg"></img>
+          <div class="cardTextSkills">
+            <h4>Web Development</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+          </div>
         </div>
+
+        <!-- Cards End -->
+
       </div>
     </section>
+
+    <!-- Footer Section -->
 
     <footer>
       <ul>
